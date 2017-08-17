@@ -1,0 +1,168 @@
+@charset "utf-8";
+html, body  {
+    min-height: 100%;
+    overflow: auto;
+    padding: 0;
+}
+body  {
+    font-size: 100%;
+    margin: 0;
+}
+*  {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header, main, footer  {
+    display: block;
+}
+#wraper  {
+    background-image: url('../img/sea.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% 1000px;
+    -moz-background-size: 100% 1000px;
+    -o-background-size: 100% 1000px;
+    background-size: 100% 1000px;
+    max-width: 2400px;
+    width: 100%;
+}
+header h1  {
+    color: #000066;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+}
+header  {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+main  {
+    font-family: 'Lato', sans-serif;
+    height: 400px;
+    padding-top: 10px;
+}
+div.box-quotes  {
+    background: #78AACE; /*For browsers that not support the gradients*/
+    background: -webkit-radial-gradient(#ffffff, #78AACE); /*Safari 5.1 to 6.0*/
+    background: -moz-radial-gradient(#ffffff, #78AACE); /*For Firefox 3.6 to 15*/
+    background: -o-radial-gradient(#ffffff, #78AACE); /*For Opera 11.6 to 12.0*/
+    background:linear-gradient(#78AACE, #ffffff, #78AACE); /*Standar syntax*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 20px #000000;
+    box-shadow: 4px 4px 20px #000000;
+    color: darkBlue;
+    display: none;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding-top: 20px;
+    width: 90%;
+}
+p.quote  {
+    text-align: center;
+}
+p.author  {
+    margin-right: 20px;
+    text-align: right;
+}
+div.buttons  {
+    display: none;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+}
+div.part-left-btn  {
+    background: #78AACE; /*For browsers that not support the gradients*/
+    background: -webkit-linear-gradient(-90deg, #ffffff, #78AACE); /*Safari 5.1 to 6.0*/
+    background: -moz-linear-gradient(-90deg, #ffffff, #78AACE); /*For Firefox 3.6 to 15*/
+    background: -o-linear-gradient(-90deg, #ffffff, #78AACE); /*For Opera 11.6 to 12.0*/
+    background: linear-gradient(-90deg, #ffffff, #78AACE); /*Standar syntax*/
+    height: 40px;
+    margin-left: 25px;
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 10px;
+}
+div.part-right-btn  {
+    background: #78AACE; /*For browsers that not support the gradients*/
+    background: -webkit-linear-gradient(-90deg, #ffffff, #78AACE); /*Safari 5.1 to 6.0*/
+    background: -moz-linear-gradient(-90deg, #ffffff, #78AACE); /*For Firefox 3.6 to 15*/
+    background: -o-linear-gradient(-90deg, #ffffff, #78AACE); /*For Opera 11.6 to 12.0*/
+    background: linear-gradient(-90deg, #ffffff, #78AACE); /*Standar syntax*/
+    height: 40px;
+    margin-left: 25px;
+    position: absolute;
+    right: 40px;
+    top: 0;
+    width: 10px;
+}
+button.tweet-btn  {
+    background: #78AACE; /*For browsers that not support the gradients*/
+    background: -webkit-radial-gradient(#ffffff, #78AACE); /*Safari 5.1 to 6.0*/
+    background: -moz-radial-gradient(#ffffff, #78AACE); /*For Firefox 3.6 to 15*/
+    background: -o-radial-gradient(#ffffff, #78AACE); /*For Opera 11.6 to 12.0*/
+    background: radial-gradient(#ffffff, #78AACE); /*Standar syntax*/
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: left;
+    height: 50px;
+    position: absolute;
+    left: 20px;
+    top: 38px;
+    width: 50px;
+}
+button.next-quote-btn  {
+    background: #78AACE; /*For browsers that not support the gradients*/
+    background: -webkit-radial-gradient(#ffffff, #78AACE); /*Safari 5.1 to 6.0*/
+    background: -moz-radial-gradient(#ffffff, #78AACE); /*For Firefox 3.6 to 15*/
+    background: -o-radial-gradient(#ffffff, #78AACE); /*For Opera 11.6 to 12.0*/
+    background: radial-gradient(#ffffff, #78AACE); /*Standar syntax*/
+    border: none;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    float: right;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 38px;
+    width: 50px;
+}
+footer  {
+    color: #ffffff;
+    font-family: 'Gloria Hallelujah', cursive;
+    height: 100px;
+    padding-top: 40px;
+    text-align: center;
+}
+footer p  {
+    margin-bottom: 10px;
+}
+span.creator  {
+    font-style: italic;
+}
+span.creator a:link  {
+    color: #000033;
+}
+@media only screen and (min-width: 600px){
+div.box-quotes  {
+    width: 500px;
+}
+p.author  {
+    margin-right: 50px;
+}
+div.buttons  {
+    width: 300px;
+}
+@media only screen and (min-width: 801px){
+div.box-quotes  {
+    width: 700px;
+}
+}
