@@ -22,7 +22,7 @@ header, main, footer  {
     -webkit-background-size: 100% 1000px;
     -moz-background-size: 100% 1000px;
     -o-background-size: 100% 1000px;
-    background-size: 100% 1000px;
+    background-size: 2400px 1000px;
     max-width: 2400px;
     width: 100%;
 }
